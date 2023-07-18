@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --first-color: #191919;
+    --second-color: #D0D3D4;
+    --font-family: 'Inter', sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+}
+.box-container{
+    background-color: var(--second-color);
+    color: var(--first-color);
+    width: 50%;
+    min-height: 100vh;
+    padding: 20px;
+}
+.box-container-2{
+    background-color: var(--first-color);
+    color: var(--second-color);
+    width: 50%;
+    min-height: 100vh;
+    padding: 20px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.image img{
+    height: 150px;
+    width: 150px;
+    border: 3px solid #1c1c1c;
+    border-radius: 50%;
+}
+.title{
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.subtitle{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+.description{
+   font-family: var(--font-family);
+   font-size: 14px;
+   font-style: italic;
+   text-align: justify;
+
+}
+.title-2{
+    padding-top: 20px;
+    text-decoration: underline;
+    font-size: 25px;
+    font-weight: 400;
+}
+.contact-list{
+    margin-top: 20px;
+    font-size: 16px;
+    list-style: none;
+}
+.contact-item{
+    font-family: var(--font-family);
+}
+.knowledge h1{
+    padding-bottom: 20px;
+}
+.knowledge-p{
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+
+@media only screen and (max-width: 1020px){
+    .container{
+        flex-direction: column;
+    }
+    .box-container, .box-container-2{
+        width: 100%;
+    }
+    .box{
+        flex-direction: column;
+    }
+    .title{
+        font-size: 20px;
+    }
+}
+
+.exp-subtitle{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.exp-list{
+    font-size: 14px;
+    padding: 20px;
+    font-family: var(--font-family);
+}
+.exp-education{
+    font-family: var(--font-family);
+    font-size: 14px;
+}
